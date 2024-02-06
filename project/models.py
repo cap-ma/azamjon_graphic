@@ -5,3 +5,6 @@ class Project(models.Model):
     title=models.TextField()
     image=models.ImageField(upload_to='media')
     url=models.TextField()
+
+    def __str__(self):
+        return self.title
